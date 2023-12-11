@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <a href="#" class="logo" id="logo">Dermo kozmetika</a>
+            <div class="SearchBar">
+                <input type="text" id="SearchBarUnos" placeholder="Search...">
+                <img id="Search" src="images/search.png">
+            </div>
+            <div class="hover-element"><img id="bag_ikonica"
+                    src="https://i.pinimg.com/originals/4e/4b/06/4e4b06fe3fbca10096ece1aa6354479b.png">
+                <div class="tekst">Omiljeni proizvodi...</div>
+            </div>
+
+            <!-- Omiljeni proizvodi -->
+            <div id="Omiljeno" class="Sakriveno">
+
+                <h2 id="NaslovOmiljeniPr">Omiljeni proizvodi</h2>
+
+                <!-- Sadrzaj -->
+                <div id="SadrzajOmiljeno">
+                </div>
+                <img id="ZatvoriOmiljeno" src="images/iks.png">
+                <img id="srce" src="images/srce2.png">
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div id="filterContainer">
+        <div id="Filteri">
+            <img src="images/strelica.png">
+            <h2>Filteri</h2>
+        </div>
+        <div id="sadrzajFilteraContainer" class="Sakriveno">
+            <div class="sadrzajFiltera">
+                <label for="kategorijaPr">Izaberite kategoriju:</label>
+                <select name="kategorijaPr" id="kategorijaPr">
+                    <option value="izaberite" selected="" disabled="">Izaberite...</option>
+                </select>
+
+                <label>Izaberite podkategoriju:</label>
+                <select name="podkategorijaPr" id="podkategorijaPr">
+
+                </select>
+            </div>
+            <div class="sortiranje">
+                <label for="sortiraj">Sortiraj po:</label>
+                <select name="sortiraj" id="sortiraj">
+                    <option value="izaberite" selected="" disabled="">Izaberite...</option>
+                    <option value="cenaRastuce">Ceni rastuce</option>
+                    <option value="cenaOpadajuce">Ceni opadajuce</option>
+                </select>
+
+                <button id="btnFiltriraj">
+                    <img src="images/search.png">
+                    Filtriraj
+                </button>
+            </div>
+        </div>
+        <img id="BirisiFilter" class="Sakriveno" src="images/filter2.png">
+    </div>
+
+    <section class="shopContainer">
+        <h2 class="naslovSekcije">Proizvodi</h2>
+
+        <!-- Sadrzaj -->
+        <div id="sadrzaj">
+        </div>
+    </section>
+
+    <div id="OmotacProzora">
+        <div id="Prozor">
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="scripts/podaci.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
